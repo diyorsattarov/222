@@ -1,0 +1,28 @@
+/* CatalogComponent.css */
+
+.catalog {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 16px;
+  }
+  
+  @media screen and (min-width: 600px) {
+    .catalog {
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    }
+  }
+  
+  @media screen and (min-width: 800px) {
+    .catalog {
+      grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    }
+  }
+  
+  @media screen and (min-width: 1200px) {
+    .catalog {
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
+  
+  /* Add more media queries as needed for larger screens */
+  
