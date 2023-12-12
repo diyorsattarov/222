@@ -1,14 +1,22 @@
+/* Home.css */
+
 .home {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100vh; /* This sets the container to the full viewport height */
-  }
-  
-  .content {
-    text-align: center; /* Center the text within the content div */
-  }
-  
-  /* Add any additional styling you need here */
-  
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Adjust as needed */
+  align-items: center;
+  min-height: 100vh; /* Ensure a minimum height of the viewport height */
+}
+
+.content {
+  text-align: center;
+  flex: 1; /* Allow the content to expand and fill the available space */
+  overflow: auto; /* Add scrollbar when content is longer than the viewport */
+}
+
+/* Add any additional styling you need here */
+
+/* Adjustments for the footer (if applicable) */
+.footer {
+  /* Add your footer styles here */
+}

@@ -1,28 +1,62 @@
 /* CatalogComponent.css */
 
 .catalog {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-    gap: 16px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 16px;
+}
+
+@media screen and (min-width: 600px) {
+  .catalog {
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
   }
-  
-  @media screen and (min-width: 600px) {
-    .catalog {
-      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    }
+}
+
+@media screen and (min-width: 800px) {
+  .catalog {
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
   }
-  
-  @media screen and (min-width: 800px) {
-    .catalog {
-      grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
-    }
+}
+
+@media screen and (min-width: 1200px) {
+  .catalog {
+    grid-template-columns: repeat(4, 1fr);
   }
-  
-  @media screen and (min-width: 1200px) {
-    .catalog {
-      grid-template-columns: repeat(4, 1fr);
-    }
-  }
-  
-  /* Add more media queries as needed for larger screens */
-  
+}
+
+/* Add more media queries as needed for larger screens */
+
+/* Styles for the card */
+.card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: transform 0.2s;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card-image {
+  width: 100%;
+  height: 150px; /* Adjust the height as needed */
+  object-fit: cover;
+}
+
+.card-content {
+  padding: 16px;
+}
+
+.catalog.dark .card {
+  color: #fff; /* White font color for dark mode */
+}
+
+.catalog.dark .card:hover {
+  transform: scale(1.1); /* Adjust hover effect for dark mode */
+}
+
+.catalog.dark .card-title,
+.catalog.dark .card-description {
+  color: #fff; /* White font color for dark mode */
+}

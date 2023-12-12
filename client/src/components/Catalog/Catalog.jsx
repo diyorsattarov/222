@@ -1,19 +1,41 @@
 // CatalogComponent.jsx
 
 import React from 'react';
-import './Catalog.css'; // Make sure to create this CSS file
+import './Catalog.css';
 
-const CatalogComponent = () => {
+const CatalogComponent = ({ darkMode }) => {
   return (
-    <div className="catalog">
-      {/* Your catalog items go here */}
-      <div className="catalog-item">Item 1</div>
-      <div className="catalog-item">Item 2</div>
-      <div className="catalog-item">Item 1</div>
-      <div className="catalog-item">Item 2</div>
-      <div className="catalog-item">Item 1</div>
-      <div className="catalog-item">Item 2</div>
-      {/* Add more items as needed */}
+    <div className={`catalog ${darkMode ? 'dark' : ''}`}>
+      {/* Example card item */}
+      <div className="card">
+        <img className="card-image" src="images/product.png" alt="Item 1" />
+        <div className="card-content">
+          <h3 className="card-title">Item 1</h3>
+          <p className="card-description">Description for Item 1</p>
+        </div>
+      </div>
+      <div className="card">
+        <img className="card-image" src="images/product.png" alt="Item 1" />
+        <div className="card-content">
+          <h3 className="card-title">Item 1</h3>
+          <p className="card-description">Description for Item 1</p>
+        </div>
+      </div>
+      <div className="card">
+        <img className="card-image" src="images/product.png" alt="Item 1" />
+        <div className="card-content">
+          <h3 className="card-title">Item 1</h3>
+          <p className="card-description">Description for Item 1</p>
+        </div>
+      </div>
+      <div className="card">
+        <img className="card-image" src="images/product.png" alt="Item 1" />
+        <div className="card-content">
+          <h3 className="card-title">Item 1</h3>
+          <p className="card-description">Description for Item 1</p>
+        </div>
+      </div>
+      {/* Add more card items as needed */}
     </div>
   );
 };
