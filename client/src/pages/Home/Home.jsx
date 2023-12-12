@@ -32,7 +32,7 @@ function Home({ darkMode, toggleDarkMode }) {
 
           <TabPanel>
             <p>Content for the Paragraph tab goes here. You can include text and images here.</p>
-            <img src="your-image.jpg" alt="Your Image" />
+            
           </TabPanel>
         </Tabs>
       </div>
